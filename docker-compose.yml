@@ -1,0 +1,16 @@
+version: "3"
+services:
+
+  web:
+    image: payara/server-full
+    ports:
+      - "8080:8080"
+      - "8181:8181"
+      - "4848:4848"
+    volumes:
+      - "./target/:/opt/payara41/deployments/"
+
+  db:
+    image: mongo
+    ports:
+      - "27017:27017"
