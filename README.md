@@ -18,6 +18,7 @@ Currency converter web application running through docker.
 mvn package
 docker-compose up
 ```
+Application runs on: `localhost:8080/webapp`
 
 ## Open Ports
 * 8080 - Payara webserver (HTTP)
